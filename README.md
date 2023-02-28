@@ -3,6 +3,6 @@
 Steps:
 - Copy something
 - Open something asking for input
-- Press shift+F12
+- Press alt+F12
 - ???
 - Profit

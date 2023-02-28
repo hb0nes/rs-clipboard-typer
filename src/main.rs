@@ -5,7 +5,7 @@ use inputbot::{KeySequence, KeybdKey::*, MouseButton::*, KeybdKey, handle_input_
 
 fn main() {
     F12Key.bind(|| {
-        if !LShiftKey.is_pressed() {
+        if !LAltKey.is_pressed() {
             return;
         }
         let mut ctx = ClipboardContext::new().unwrap();
@@ -42,6 +42,6 @@ fn main() {
         }
     });
     println!("Write current clipboard contents character by character, as if you were typing it yourself.");
-    println!("Keybind: shift+f12");
+    println!("Keybind: alt+f12");
     handle_input_events();
 }
